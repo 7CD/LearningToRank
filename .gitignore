@@ -1,15 +1,7 @@
-## Cache
 */.ipynb_checkpoints/*
 __pycache__
 
-## IDEs
-.idea/
-
-# Project
-reports/*
-models/*
+venv
 .env
 
-# Venv
-venv
 
