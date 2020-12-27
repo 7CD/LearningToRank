@@ -1,0 +1,15 @@
+## Cache
+*/.ipynb_checkpoints/*
+__pycache__
+
+## IDEs
+.idea/
+
+# Project
+reports/*
+models/*
+.env
+
+# Venv
+venv
+

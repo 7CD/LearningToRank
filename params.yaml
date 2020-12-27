@@ -1,0 +1,39 @@
+model:
+  model_name: model.joblib
+  models_folder: models
+
+data_load:
+  url: https://drive.google.com/uc?id=1UazU8Dd1ZahFPKQL4bqgapfkqiZax6SO
+  raw_dataset_path: data/raw/l2r.tar.gz
+  processed_dataset_dir: data/processed/
+
+data_split:
+  test_size: 0.3
+  random_state: 42
+  train_csr_path: data/processed/split/X_train.npz
+  y_train_path: data/processed/split/y_train.npy
+  qid_train_path: data/processed/split/qid_train.npy
+  X_val_path: data/processed/split/X_val.npz
+  y_val_path: data/processed/split/y_val.npy
+  qid_val_path: data/processed/split/qid_val.npy
+
+train:
+  n_trees: 2
+  max_depth: 1
+  learning_rate: 0.2
+  X_path: data/processed/split/X_train.npz
+  y_path: data/processed/split/y_train.npy
+  qid_path: data/processed/split/qid_train.npy
+
+evaluate:
+  model_path: models/model.joblib
+  X_path: data/processed/split/X_val.npz
+  y_path: data/processed/split/y_val.npy
+  qid_path: data/processed/split/qid_val.npy
+  metrics_path: reports/metrics.json
+
+submit:
+  submission_path: 'src/kaggle/submission.txt'
+  model_path: models/model.joblib
+  X_path: data/processed/test_csr.npz
+
