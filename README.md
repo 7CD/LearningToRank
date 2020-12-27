@@ -2,7 +2,7 @@
 
 Participation in kaggle [competition](https://www.kaggle.com/c/learning-to-rank-made-fall-2019).
 
-[src/ranking/model.py](Implementatoin of LambdaMART) ranking algorithm following 
+[https://github.com/7CD/LearningToRank/blob/dev/src/ranking/model.py](Implementatoin of LambdaMART) ranking algorithm following 
 [*J.C. Burges. From RankNet to LambdaRank to LambdaMART: An overview. Technical Report MSR-TR-2010-82, Microsoft Research, 2010.*](https://www.microsoft.com/en-us/research/uploads/prod/2016/02/MSR-TR-2010-82.pdf)
 
 
@@ -66,7 +66,6 @@ In order to use the Kaggle’s public API, you must first authenticate using an 
 To create a new token, click on the “Create New API Token” button. This will download a fresh authentication token onto your machine.
 
 If you are using the Kaggle CLI tool, the tool will look for this token at ~/.kaggle/kaggle.json on Linux, OSX, and other UNIX-based operating systems, and at C:\Users<Windows-username>.kaggle\kaggle.json on Windows. If the token is not there, an error will be raised. Hence, once you’ve downloaded the token, you should move it from your Downloads folder to this folder.
-
 [(https://www.kaggle.com/docs/api)](https://www.kaggle.com/docs/api)
 
 ```bash
